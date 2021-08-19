@@ -49,9 +49,9 @@ const currentAudioPlay = {
   play: function (audioFile) {
     isPlay ? audioFile.play() : audioFile.pause();
     audioFile === GAME_AUDIO.backgroundAudio ? audioFile.volume = 0.7 : audioFile.volume = 0.1;
-    audioFile === GAME_AUDIO.correctAudio ? audioFile.volume = 1.5 : audioFile.volume = 0.1;
+    audioFile === GAME_AUDIO.correctAudio ? audioFile.volume = 1.0 : audioFile.volume = 0.1;
     audioFile === GAME_AUDIO.wrongAudio ? audioFile.volume = 0.5 : audioFile.volume = 0.1;
-    audioFile === GAME_AUDIO.successSound ? audioFile.volume = 1.5 : audioFile.volume = 0.1;
+    audioFile === GAME_AUDIO.successSound ? audioFile.volume = 1.0 : audioFile.volume = 0.1;
     audioFile === GAME_AUDIO.failSound ? audioFile.volume = 1.0 : audioFile.volume = 0.1;
     audioFile.currentTime = 0;
   },
@@ -289,4 +289,3 @@ function remainTimer () {
    }
   },1000);
  }
-
