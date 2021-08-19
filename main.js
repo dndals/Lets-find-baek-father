@@ -266,7 +266,7 @@ function resetCoverImage (i) {
     setTimeout(() => {
       changeImageArray[i].classList.add('hidden'); 
       coverImageArray[i].classList.remove('hidden');
-    }, 1000);
+    }, 500);
 }
 
 function remainTimer () {
@@ -289,17 +289,3 @@ function remainTimer () {
    }
   },1000);
  }
-
-// function makeRandomNumberArray () {
-//   for (let i = 0; i < TOTALCELLCOUNT; i++) {
-//     randomNumber = Math.floor(Math.random() * 16 + 1);
-//     if (numberArray.indexOf(randomNumber) === -1) {
-//       numberArray.push(randomNumber);
-//     } else {
-//       i--;
-//     }
-//   }
-//   return numberArray;
-// }
-
-//makeRandomNumberArray();
