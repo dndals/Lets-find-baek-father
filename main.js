@@ -270,7 +270,7 @@ function resetCoverImage (i) {
 }
 
 function remainTimer () {
-  let timeLeft = 25;
+  let timeLeft = 30;
   timer = setInterval(() => {
    if (timeLeft < 0) {
      clearInterval(timer);
