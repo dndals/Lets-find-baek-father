@@ -291,17 +291,3 @@ function remainTimer () {
    }
   },1000);
  }
-
-// function makeRandomNumberArray () {
-//   for (let i = 0; i < TOTALCELLCOUNT; i++) {
-//     randomNumber = Math.floor(Math.random() * 16 + 1);
-//     if (numberArray.indexOf(randomNumber) === -1) {
-//       numberArray.push(randomNumber);
-//     } else {
-//       i--;
-//     }
-//   }
-//   return numberArray;
-// }
-
-//makeRandomNumberArray();
