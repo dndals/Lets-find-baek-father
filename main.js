@@ -240,7 +240,9 @@ function successedNotice () {
   clearInterval(timer);
 
   $countTime.classList.add('hidden');
+  $countTimeText.classList.add('hidden');
   $remainBaeks.classList.add('hidden');
+  $remainBaeksText.classList.add('hidden');
   $tableBox.classList.add('hidden');
   
   $successedImage.src = './images/successImage.PNG';
