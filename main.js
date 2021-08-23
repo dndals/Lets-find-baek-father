@@ -70,8 +70,6 @@ function handlegameStart (e) {
     $countTimeText.classList.remove('hidden');
     $remainBaeks.classList.remove('hidden');
     $remainBaeksText.classList.remove('hidden');
-
-
   }
 
   currentAudioPlay.play(GAME_AUDIO.backgroundAudio);
@@ -128,7 +126,6 @@ function failedNotice () {
   $remainBaeks.classList.add('hidden');
   $remainBaeksText.classList.add('hidden');
 
-  // $successedImage.classList.add('hidden');
   $tableBox.classList.add('hidden');
   
   $failedImage.src = './images/failImage.PNG';
@@ -248,6 +245,7 @@ function successedNotice () {
   clearInterval(timer);
   $buttonRestart.classList.remove('hidden');
   $successedImage.classList.remove('hidden');
+  
   $countTime.classList.add('hidden');
   $countTimeText.classList.add('hidden');
   $remainBaeks.classList.add('hidden');
@@ -288,9 +286,7 @@ function remainTimer () {
      failedNotice();
 
      $buttonRestart.classList.remove('hidden');
-     //$failedImage.classList.remove('hidden');
      $noticeTagP.classList.remove('hidden');
-;
    } else {
      $countTime.textContent = '남은 시간 : ';
      $countTime.classList.add('remain-time');
